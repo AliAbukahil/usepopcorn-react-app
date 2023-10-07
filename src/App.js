@@ -63,6 +63,18 @@ export default function App() {
 
       {/* component composition */}
       <Main>
+        {/* Passing Element/component as props Alternative to children */}
+        {/* <Box element={<MovieList movies={movies} />} />
+        <Box
+          element={
+            <>
+              <WatchedSummary watched={watched} />
+              <WatchedMoviesList watched={watched} />
+            </>
+          }
+        /> */}
+
+        {/* Passing a component as a children */}
         <Box>
           <MovieList movies={movies} />
         </Box>
